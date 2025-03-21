@@ -26,6 +26,7 @@ export default class CL_Main {
             fijo2 = new Cl_Fijo("Carolina", 40, 90);
 
         let salida = document.getElementById("salida")
+        
         salida.innerHTML = `
         Ejemplos de la corrida:
     <br>Nombre del profesor fijo: ${fijo1.nombre}
