@@ -6,8 +6,10 @@ export default class CL_Ropa extends CL_Tienda {
         this.color = color;
     }
 
-    costoTotal(){
-        if(this.color == 3)
+    costoTotal() {
+        if (this.color == 3)
             return this.aumentCost() - (this.aumentCost * 0.10)
+        else
+            return this.aumentCost()
     }
 }
