@@ -7,30 +7,23 @@ export default class CL_Administrativo extends CL_Persona {
     }
 
     bonoNivel() {
-        switch (this.nivelEstud) {
-            case 1: {
-                if (this.edad >= 18)
-                    return 50
-                else 0
-            };
-                break;
-            case 2: {
-                if (this.edad >= 18)
-                    return 100
-                else 0
-            };
-                break;
-            case 3: {
-                if (this.edad >= 18)
-                    return 100
-                else 0
-            };
-                break;
-            default: 0
+        if (this.nivelEstud == 1) {
+            if (this.edad >= 18)
+                return 50
+            else
+                return 0
         }
+        else if ((this.nivelEstud == 2) && (this.nivelEstud == 3)) {
+            if (this.edad >= 18)
+                return 100
+            else
+                return 0
+        }
+        else
+            return 0
     }
 
-    sueldoFi(){
+    sueldoFi() {
         return this.sueldoBase() + this.bonoNivel()
     }
 }
