@@ -13,7 +13,7 @@ export default class Recuerdo{
     }
 
     set costBase(costBase){
-        this._costBase = costBase;
+        this._costBase = +costBase;
     }
 
     get costBase(){
