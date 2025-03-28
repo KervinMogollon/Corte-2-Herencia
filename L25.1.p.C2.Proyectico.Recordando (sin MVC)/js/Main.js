@@ -54,9 +54,6 @@ export default class CL_Main {
         }
 
         let salida = document.getElementById("salida");
-
-
-
         salida.innerHTML = `
         <table>
             <tr>
