@@ -29,7 +29,6 @@ export default class CL_Main {
             fot3 = new Fotografia("55", 30, "I"),
             fot4 = new Fotografia("88", 20, "D");
 
-
         let vid1 = new Video("44", 100, "SI"),
             vid2 = new Video("33", 200, "SI"),
             vid3 = new Video("77", 250, "NO"),
@@ -70,9 +69,7 @@ export default class CL_Main {
         ${mostrarRecuerdo(vid4)}
         </table>
         <br>Total vendido ${(tnd.montoFinal()).toFixed(2)}$
-        <br>El promedio de ventas de promociones de fotos digitales vendidas ${(tnd.promdDigital()).toFixed(2)}
-        
+        <br>El promedio de ventas de promociones de fotos digitales vendidas ${(tnd.promdDigital()).toFixed(2)} 
         `
-
     }
 }
