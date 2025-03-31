@@ -68,6 +68,7 @@ export default class CL_Main {
         ${mostrarRecuerdo(vid3)}
         ${mostrarRecuerdo(vid4)}
         </table>
+        
         <br>Total vendido ${(tnd.montoFinal()).toFixed(2)}$
         <br>El promedio de ventas de promociones de fotos digitales vendidas ${(tnd.promdDigital()).toFixed(2)} 
         `

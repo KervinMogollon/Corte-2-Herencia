@@ -28,7 +28,6 @@ export default class CL_Main {
         let salida = document.getElementById("salida")
         
         salida.innerHTML = `
-        Ejemplos de la corrida:
     <br>Nombre del profesor fijo: ${fijo1.nombre}
     <br>Monto del bono: ${fijo1.bono}$
     <br>Monto del sueldo: ${fijo1.sueldo}$
