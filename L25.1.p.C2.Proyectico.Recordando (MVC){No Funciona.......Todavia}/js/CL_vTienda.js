@@ -16,11 +16,11 @@ export default class vTienda {
         this.tablaVideo = document.getElementById("tablaVideo");
 
         this.vFoto.btProcesar.onclick = () => {
-            this.controlador.procesarRecuerdo();
+            this.controlador.procesarFoto();
         }
 
         this.vVid.btProcesar.onclick = () => {
-            this.controlador.procesarRecuerdo();
+            this.controlador.procesarVideo();
         }
     }
 
@@ -42,7 +42,7 @@ export default class vTienda {
         return this.mVid
     }
 
-    reporte(montoFinal, promdDigital) {
+    reporte1(montoFinal, promdDigital) {
         this.tablaFoto.innerHTML += `
         <tr>
         <td>${this.mFoto.cod}</td>
@@ -50,17 +50,24 @@ export default class vTienda {
         </tr>
         `;
 
+        this.salida.innerHTML = `
+        <br>Total vendido ${montoFinal}$
+        <br>El promedio de ventas de promociones de fotos digitales vendidas ${promdDigital} 
+        <br>`
+    }
+
+    reporte2(montoFinal, promdDigital) {
         this.tablaVideo.innerHTML += `
         <tr>
-        <td>${this.vVid.cod}</td>
-        <td>${this.vVid.montPagar()}</td>
+        <td>${this.mVid.cod}</td>
+        <td>${this.mVid.montPagar()}</td>
         </tr>
         `;
 
         this.salida.innerHTML = `
         <br>Total vendido ${montoFinal}$
         <br>El promedio de ventas de promociones de fotos digitales vendidas ${promdDigital} 
-        `
-
+        <br>`
+        
     }
 }

@@ -22,5 +22,6 @@ export default class mFotografia extends Recuerdo {
         else
             return 0
     }
+    
 }
 
