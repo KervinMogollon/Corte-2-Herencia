@@ -1,4 +1,4 @@
-import mFotografia from "./CL_mFotografia.js";
+import mFotografia from "./Hijas/CL_mFotografia.js";
 
 export default class mTienda {
     constructor() {

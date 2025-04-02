@@ -1,4 +1,4 @@
-import Recuerdo from "./CL_Recuerdo.js";
+import Recuerdo from "../CL_Recuerdo.js";
 
 export default class mVideo extends Recuerdo {
     constructor({cod, costBase, formato}) {

@@ -1,4 +1,4 @@
-import Recuerdo from "./CL_Recuerdo.js";
+import Recuerdo from "../CL_Recuerdo.js";
 
 export default class mFotografia extends Recuerdo {
     constructor({cod, costBase, tipo}) {

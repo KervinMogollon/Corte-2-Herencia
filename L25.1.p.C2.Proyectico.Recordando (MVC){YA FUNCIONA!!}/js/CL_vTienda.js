@@ -1,8 +1,8 @@
-import mFotografia from "./CL_mFotografia.js";
-import vFotografia from "./CL_vFotografia.js";
+import mFotografia from "./Hijas/CL_mFotografia.js";
+import vFotografia from "./Hijas/CL_vFotografia.js";
 
-import mVideo from "./CL_mVideo.js";
-import vVideo from "./CL_vVideos.js";
+import mVideo from "./Hijas/CL_mVideo.js";
+import vVideo from "./Hijas/CL_vVideos.js";
 
 export default class vTienda {
     constructor() {
@@ -45,8 +45,8 @@ export default class vTienda {
     reporte1(montoFinal, promdDigital) {
         this.tablaFoto.innerHTML += `
         <tr>
-        <td>${this.mFoto.cod}</td>
-        <td>${this.mFoto.montPagar()}</td>
+            <td>${this.mFoto.cod}</td>
+            <td>${this.mFoto.montPagar()}</td>
         </tr>
         `;
 
@@ -59,8 +59,8 @@ export default class vTienda {
     reporte2(montoFinal, promdDigital) {
         this.tablaVideo.innerHTML += `
         <tr>
-        <td>${this.mVid.cod}</td>
-        <td>${this.mVid.montPagar()}</td>
+            <td>${this.mVid.cod}</td>
+            <td>${this.mVid.montPagar()}</td>
         </tr>
         `;
 
