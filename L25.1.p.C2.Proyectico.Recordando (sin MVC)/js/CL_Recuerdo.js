@@ -19,4 +19,6 @@ export default class Recuerdo{
     get costBase(){
         return this._costBase;
     }
+
+    
 }
