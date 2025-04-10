@@ -6,13 +6,6 @@ export default class Fotografia extends Recuerdo {
         this.tipo = tipo;
     }
 
-    set tipo(tipo) {
-        this._tipo = tipo;
-    }
-
-    get tipo() {
-        return this._tipo;
-    }
 
     montPagar() {
         if (this.tipo == "D")

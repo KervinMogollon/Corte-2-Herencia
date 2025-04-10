@@ -6,13 +6,7 @@ export default class Video extends Recuerdo {
         this.formato = formato
     }
 
-    set formato(formato) {
-        this._formato = formato;
-    }
 
-    get formato() {
-        return this._formato;
-    }
 
     montPagar() {
         switch (this.formato) {
